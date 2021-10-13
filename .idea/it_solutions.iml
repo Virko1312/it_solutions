@@ -6,5 +6,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="all" level="application" />
     <orderEntry type="library" name="47b5a1dd96" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="waypoints" level="application" />
+    <orderEntry type="library" name="animate.css" level="application" />
   </component>
 </module>

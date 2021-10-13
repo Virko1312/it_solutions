@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,40 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IT Solutions</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/favicon/favicon-16x16.png">
+    <link rel="manifest" href="vendors/favicon/site.webmanifest">
+
     <script src="https://kit.fontawesome.com/47b5a1dd96.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendors/css/fluid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/media-query.css">
 </head>
 <body>
 
-<header>
+<header id="home">
     <nav>
         <img class="logo" src="resources/img/it_logo.png" alt="IT Solutions Logo">
         <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
     <div class="header-box">
         <div class="header-text-box">
             <h1>IT Agency</h1>
             <h2>We provide the best web services</h2>
-            <a href="#" class="btn btn-full">Get a Quote Today!</a>
+            <a href="#" class="btn btn-full js--scroll-to-contact">Get a Quote Today!</a>
         </div>
     </div>
 </header>
 
-<section class="about-section">
+<section class="about-section js--about-section" id="about">
     <div class="row">
-        <div class="col span_1_of_2 about-box">
+        <div class="col span_1_of_2 about-box js--about-box">
             <h2 class="about-heading">Digital Agency focused on growing your online presence</h2>
             <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt mattis placerat. Nunc quis faucibus mi, id ultrices leo.</p>
             <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt mattis placerat. Nunc quis faucibus mi, id ultrices leo.</p>
             <a href="#" class="btn btn-ghost">Read more</a>
         </div>
-        <div class="col span_1_of_2 about-box">
+        <div class="col span_1_of_2 about-box js--about-box">
             <img src="resources/img/about_image.jpg" alt="IT image" class="it-image">
         </div>
     </div>
@@ -79,31 +86,31 @@
     </ul>
 </section>
 
-<section class="services-section">
+<section class="services-section js--services-section">
     <div class="row">
         <h2 class="section-heading">Our Services</h2>
         <h3 class="section-sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
     </div>
     <div class="row">
-        <div class="col span_1_of_4 service-box">
+        <div class="col span_1_of_4 service-box js--service-box">
             <i class="fas fa-tags big-icon"></i>
             <h4 class="service-heading">Branding</h4>
             <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="#" class="service-link">READ MORE...</a>
         </div>
-        <div class="col span_1_of_4 service-box">
+        <div class="col span_1_of_4 service-box js--service-box">
             <i class="fas fa-pen-alt big-icon"></i>
             <h4 class="service-heading">Content</h4>
             <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="#" class="service-link">READ MORE...</a>
         </div>
-        <div class="col span_1_of_4 service-box">
+        <div class="col span_1_of_4 service-box js--service-box">
             <i class="fas fa-funnel-dollar big-icon"></i>
             <h4 class="service-heading">Marketing</h4>
             <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <a href="#" class="service-link">READ MORE...</a>
         </div>
-        <div class="col span_1_of_4 service-box">
+        <div class="col span_1_of_4 service-box js--service-box">
             <i class="fas fa-code big-icon"></i>
             <h4 class="service-heading">Web Design</h4>
             <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -159,13 +166,13 @@
     </div>
 </section>
 
-<section class="packages-section">
+<section class="packages-section js--package-section">
     <div class="row">
         <h2 class="packages-heading">Check out our most popular packages</h2>
     </div>
     <div class="row">
         <div class="col span_1_of_3">
-            <div class="package-box">
+            <div class="package-box js--package-box">
                 <div>
                     <h4 class="package-heading">Starter</h4>
                     <p class="package-price">$699 <span>3 months</span></p>
@@ -186,7 +193,7 @@
             </div>
         </div>
         <div class="col span_1_of_3">
-            <div class="package-box">
+            <div class="package-box js--package-box">
                 <div>
                     <h4 class="package-heading">Corporate</h4>
                     <p class="package-price">$2,999 <span>6 months</span></p>
@@ -207,7 +214,7 @@
             </div>
         </div>
         <div class="col span_1_of_3">
-            <div class="package-box">
+            <div class="package-box js--package-box">
                 <div>
                     <h4 class="package-heading">Enterprise</h4>
                     <p class="package-price">$4,999 <span>12 months</span></p>
@@ -230,14 +237,14 @@
     </div>
 </section>
 
-<section class="contact-section">
+<section class="contact-section js--contact" id="contact">
     <div class="row">
         <h2 class="contact-heading">We're happy to hear from you</h2>
     </div>
     <div class="row">
         <form method="post" action="#" class="contact-form">
             <div class="row">
-                <div class="col span_1_of_3">
+                <div class="col span_1_of_3 contact-label">
                     <label for="name">Name</label>
                 </div>
                 <div class="col span_2_of_3">
@@ -245,7 +252,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col span_1_of_3">
+                <div class="col span_1_of_3 contact-label">
                     <label for="email">Email</label>
                 </div>
                 <div class="col span_2_of_3">
@@ -253,7 +260,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col span_1_of_3">
+                <div class="col span_1_of_3 contact-label">
                     <label for="newsletter">Newsletter?</label>
                 </div>
                 <div class="col span_2_of_3">
@@ -261,7 +268,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col span_1_of_3">
+                <div class="col span_1_of_3 contact-label">
                     <label for="message">Drop us a line</label>
                 </div>
                 <div class="col span_2_of_3">
@@ -269,9 +276,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col span_1_of_3">
-                    &nbsp;
-                </div>
+                <div class="col span_1_of_3"></div>
                 <div class="col span_2_of_3">
                     <a href="#" class="btn btn-full">Send it!</a>
                 </div>
@@ -305,6 +310,10 @@
         <p>This webpage has been created for educational purposes.</p>
     </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="resources/js/script.js"></script>
 
 </body>
 </html>

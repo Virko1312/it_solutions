@@ -126,6 +126,33 @@ h2 {
     width: 80%;
     border-radius: 25px;
 }
+
+
+.sticky-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,.8);
+    width: 100%;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 900;
+}
+
+.sticky-nav .logo {
+    height: 80px;
+    width: auto;
+    margin-top: 3px;
+}
+
+.sticky-nav .main-nav {
+    margin-top: 26px;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited {
+    color: #555555;
+    padding: 5px 0;
+}
 /*About Section*/
 .about-box {
     margin-top: 150px;
@@ -496,4 +523,19 @@ footer {
 footer p {
     text-align: center;
     margin-top: 50px;
+}
+
+/*JQUERY ANIMATE ON SCROLL*/
+
+.js--about-box {
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+.js--about-box.animate__animated {
+    opacity: 1;
+}
+
+.js--service-box {
+    animation-duration: 2s;
 }
